@@ -1,0 +1,7 @@
+int largestBST(struct node *root)
+{
+   if (isBST(root))
+     return size(root); 
+   else
+    return max(largestBST(root->left), largestBST(root->right));
+}
